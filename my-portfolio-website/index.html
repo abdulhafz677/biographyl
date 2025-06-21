@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ฺศฯ วแอวÝู ฺฯไวไ - ิัํ฿฿ แไใๆ วแรฺใวแ ศวแฺใๆแษ</title>
-    <!-- สึใํไ Tailwind CSS ใไ CDN แสีใํใ ำัํฺ ๆใัไ -->
+    <title>ุนุจุฏ ุงูุญุงูุธ ุนุฏูุงู - ุดุฑููู ูููุตูู ููุดูุฑุฉ ู…ูู…ุง ูุงู ู…ุฌุงูู</title>
+    <!-- ุชุถู…ูู Tailwind CSS ู…ู CDN ูุชุตู…ูู… ุณุฑูุน ูู…ุฑู -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,38 +12,38 @@
     
     <style>
         body {
-            font-family: 'Noto Sans Arabic', sans-serif; /* วแฮุ วแÝัฺํ แแไีๆี วแัฦํำํษ */
-            direction: rtl; /* แึศุ วสฬวๅ วแไี แํสไวำศ ใฺ วแแÛษ วแฺัศํษ */
-            text-align: right; /* แใอวะวษ วแไี แํสไวำศ ใฺ วแแÛษ วแฺัศํษ */
+            font-family: 'Noto Sans Arabic', sans-serif; /* ุงูุฎุท ุงููุฑุนู ูููุตูุต ุงูุฑุฆูุณูุฉ */
+            direction: rtl; /* ูุถุจุท ุงุชุฌุงู ุงููุต ููุชูุงุณุจ ู…ุน ุงููุบุฉ ุงูุนุฑุจูุฉ */
+            text-align: right; /* ูู…ุญุงุฐุงุฉ ุงููุต ููุชูุงุณุจ ู…ุน ุงููุบุฉ ุงูุนุฑุจูุฉ */
         }
-        /* สุศํÞ ฮุ Cairo ฺแ์ วแฺไวๆํไ วแัฦํำํษ */
+        /* ุชุทุจูู ุฎุท Cairo ุนูู ุงูุนูุงููู ุงูุฑุฆูุณูุฉ */
         h1, h2, h3 {
             font-family: 'Cairo', sans-serif;
         }
 
-        /* สรหํัวส วแรแๆวไ ๆวแสูแํแ แฬฺแ วแสีใํใ ํศฯๆ หแวหํ วแรศฺวฯ ๆฬะวศ๐ว */
+        /* ุชุฃุซูุฑุงุช ุงูุฃููุงู ูุงูุชุธููู ูุฌุนู ุงูุชุตู…ูู… ูุจุฏู ุซูุงุซู ุงูุฃุจุนุงุฏ ูุฌุฐุงุจูุง */
         .gradient-bg-hero {
-            background: linear-gradient(135deg, #0A7373 0%, #054040 100%); /* สฯัฬ แๆไํ ฺใํÞ ๆใะๅแ */
+            background: linear-gradient(135deg, #0A7373 0%, #054040 100%); /* ุชุฏุฑุฌ ูููู ุนู…ูู ูู…ุฐูู */
         }
         .text-glow {
-            text-shadow: 0 0 8px rgba(0,255,255,0.7), 0 0 15px rgba(0,255,255,0.4); /* สรหํั สๆๅฬ แแไี */
+            text-shadow: 0 0 8px rgba(0,255,255,0.7), 0 0 15px rgba(0,255,255,0.4); /* ุชุฃุซูุฑ ุชููุฌ ูููุต */
         }
         .nav-link:hover {
-            color: #00FFFF; /* แๆไ ำใวๆํ ใสๆๅฬ ฺไฯ วแสใัํั */
+            color: #00FFFF; /* ููู ุณู…ุงูู ู…ุชููุฌ ุนูุฏ ุงูุชู…ุฑูุฑ */
             text-shadow: 0 0 5px rgba(0,255,255,0.5);
         }
-        /* รไใวุ วแศุวÞวส ใฺ ูแวแ ใอำไษ ๆสรหํัวส ัÝฺ */
+        /* ุฃูู…ุงุท ุงูุจุทุงูุงุช ู…ุน ุธูุงู ู…ุญุณูุฉ ูุชุฃุซูุฑุงุช ุฑูุน */
         .card-3d-effect {
             position: relative;
             transform-style: preserve-3d;
             transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05); /* ูแ รำวำํ */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05); /* ุธู ุฃุณุงุณู */
         }
         .card-3d-effect:hover {
-            transform: translateY(-12px) rotateX(2deg) rotateY(-2deg); /* ัÝฺ ๆสฯๆํั ฮÝํÝ แลอำวำ หแวหํ วแรศฺวฯ */
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.1); /* ูแ รฺใÞ ฺไฯ วแสใัํั */
+            transform: translateY(-12px) rotateX(2deg) rotateY(-2deg); /* ุฑูุน ูุชุฏููุฑ ุฎููู ูุฅุญุณุงุณ ุซูุงุซู ุงูุฃุจุนุงุฏ */
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.1); /* ุธู ุฃุนู…ู ุนูุฏ ุงูุชู…ุฑูุฑ */
         }
-        /* สรหํัวส ัำๆใ ใสอั฿ษ แฯฮๆแ วแฺไวีั */
+        /* ุชุฃุซูุฑุงุช ุฑุณูู… ู…ุชุญุฑูุฉ ูุฏุฎูู ุงูุนูุงุตุฑ */
         @keyframes fadeInScale {
             from { opacity: 0; transform: scale(0.9) translateY(20px); }
             to { opacity: 1; transform: scale(1) translateY(0); }
@@ -60,209 +60,209 @@
         .animate-slideInFromRight { animation: slideInFromRight 0.8s ease-out forwards; }
         .animate-slideInFromLeft { animation: slideInFromLeft 0.8s ease-out forwards; }
 
-        /* สศวฺฯ แแฮฯใวส แสฬไศ วแวแสีวÞ ฺไฯ วแิวิวส วแีÛํัษ ฬฯว๐ */
+        /* ุชุจุงุนุฏ ููุฎุฏู…ุงุช ูุชุฌูุจ ุงูุงูุชุตุงู ุนูุฏ ุงูุดุงุดุงุช ุงูุตุบูุฑุฉ ุฌุฏุงู */
         .service-grid {
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         }
 
-        /* สฺฯํแวส ฺแ์ วแาั วแัฦํำํ แลศัวาๅ ร฿หั */
+        /* ุชุนุฏููุงุช ุนูู ุงูุฒุฑ ุงูุฑุฆูุณู ูุฅุจุฑุงุฒู ุฃูุซุฑ */
         .hero-button {
-            background: linear-gradient(45deg, #00FFFF, #00BFFF); /* ราัÞ ำใวๆํ ใสๆๅฬ */
-            color: #054040; /* แๆไ ไี ฯว฿ไ ํสไวำศ ใฺ วแฮแÝํษ */
-            font-weight: 800; /* ฮุ ำใํ฿ ฬฯว๐ */
-            text-shadow: 0 0 5px rgba(255,255,255,0.5); /* สๆๅฬ รศํึ ฮÝํÝ แแไี */
+            background: linear-gradient(45deg, #00FFFF, #00BFFF); /* ุฃุฒุฑู ุณู…ุงูู ู…ุชููุฌ */
+            color: #054040; /* ููู ูุต ุฏุงูู ูุชูุงุณุจ ู…ุน ุงูุฎูููุฉ */
+            font-weight: 800; /* ุฎุท ุณู…ูู ุฌุฏุงู */
+            text-shadow: 0 0 5px rgba(255,255,255,0.5); /* ุชููุฌ ุฃุจูุถ ุฎููู ูููุต */
             transition: all 0.3s ease-in-out;
         }
         .hero-button:hover {
-            transform: scale(1.1) rotate(2deg); /* ฯๆัวไ ๆัÝฺ ร฿ศั */
-            box-shadow: 0 0 25px rgba(0, 255, 255, 0.8); /* สๆๅฬ อๆแ วแาั */
+            transform: scale(1.1) rotate(2deg); /* ุฏูุฑุงู ูุฑูุน ุฃูุจุฑ */
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.8); /* ุชููุฌ ุญูู ุงูุฒุฑ */
         }
     </style>
 </head>
 <body class="bg-gray-900 text-gray-100">
 
-    <!-- Þำใ ิัํุ วแสไÞแ (Header/Navbar) -->
+    <!-- ูุณู… ุดุฑูุท ุงูุชููู (Header/Navbar) -->
     <header class="bg-gray-800 shadow-xl py-4 sticky top-0 z-50">
         <div class="container mx-auto px-4 flex justify-between items-center">
-            <!-- วำใ฿ / ิฺวั฿ -->
+            <!-- ุงุณู…ู / ุดุนุงุฑู -->
             <a href="#hero" class="text-4xl font-black text-emerald-400 rounded-lg p-2 hover:bg-gray-700 transition-colors duration-300">
-                ฺศฯ วแอวÝู ฺฯไวไ
+                ุนุจุฏ ุงูุญุงูุธ ุนุฏูุงู
             </a>
-            <!-- ัๆวศุ วแสไÞแ -->
+            <!-- ุฑูุงุจุท ุงูุชููู -->
             <nav>
                 <ul class="flex space-x-8 space-x-reverse">
-                    <li><a href="#about" class="nav-link text-lg font-bold text-gray-300 hover:text-emerald-300 transition-colors duration-200">ใไ รไว</a></li>
-                    <li><a href="#expertise" class="nav-link text-lg font-bold text-gray-300 hover:text-emerald-300 transition-colors duration-200">ฮศัวสํ</a></li>
-                    <li><a href="#vision" class="nav-link text-lg font-bold text-gray-300 hover:text-emerald-300 transition-colors duration-200">ัฤํสํ แแิัว฿ษ</a></li>
-                    <li><a href="#contact" class="nav-link text-lg font-bold text-gray-300 hover:text-emerald-300 transition-colors duration-200">สๆวีแ ใฺํ</a></li>
+                    <li><a href="#about" class="nav-link text-lg font-bold text-gray-300 hover:text-emerald-300 transition-colors duration-200">ู…ู ุฃูุง</a></li>
+                    <li><a href="#expertise" class="nav-link text-lg font-bold text-gray-300 hover:text-emerald-300 transition-colors duration-200">ุฎุจุฑุงุชู</a></li>
+                    <li><a href="#vision" class="nav-link text-lg font-bold text-gray-300 hover:text-emerald-300 transition-colors duration-200">ุฑุคูุชู ููุดุฑุงูุฉ</a></li>
+                    <li><a href="#contact" class="nav-link text-lg font-bold text-gray-300 hover:text-emerald-300 transition-colors duration-200">ุชูุงุตู ู…ุนู</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Þำใ วแศุแ (Hero Section) - รๆแ ใว ํัวๅ วแาวฦั -->
+    <!-- ูุณู… ุงูุจุทู (Hero Section) - ุฃูู ู…ุง ูุฑุงู ุงูุฒุงุฆุฑ -->
     <section id="hero" class="gradient-bg-hero text-white py-32 text-center rounded-b-3xl shadow-2xl">
         <div class="container mx-auto px-6">
             <h1 class="text-7xl font-extrabold mb-6 animate-fadeInScale text-glow leading-tight">
-                ฺศฯ วแอวÝู ฺฯไวไ: <br> ิัํ฿฿ แไใๆ ใึวฺÝ Ýํ วแสำๆํÞ ศวแฺใๆแษ
+                ุนุจุฏ ุงูุญุงูุธ ุนุฏูุงู: <br> ุดุฑููู ููู…ู ู…ุถุงุนู ูู ุงูุชุณููู ุจุงูุนู…ููุฉ
             </h1>
             <p class="text-3xl mb-12 animate-fadeInScale delay-200">
-                ไอๆแ ัฤํส฿ ลแ์ ใศํฺวส ๆรัศวอ ใำสฯวใษ.
+                ูุญูู ุฑุคูุชู ุฅูู ู…ุจูุนุงุช ูุฃุฑุจุงุญ ู…ุณุชุฏุงู…ุฉ.
             </p>
             <a href="#contact" class="hero-button py-5 px-12 rounded-full shadow-2xl inline-block transform hover:scale-105 animate-bounce-in">
-                แไไใ๖ รฺใวแ฿ ใฺ๐ว!
+                ูููู…ู ุฃุนู…ุงูู ู…ุนูุง!
             </a>
         </div>
     </section>
 
-    <!-- Þำใ "ใไ รไว" (About Me) -->
+    <!-- ูุณู… "ู…ู ุฃูุง" (About Me) -->
     <section id="about" class="py-24 bg-gray-900 text-gray-100 border-b border-gray-700">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-5xl font-bold text-emerald-400 mb-12 animate-fadeInScale">ใไ รไวฟ: ศไวม ฬำๆั ศํไ วแลศฯวฺ ๆวแัศอํษ</h2>
+            <h2 class="text-5xl font-bold text-emerald-400 mb-12 animate-fadeInScale">ู…ู ุฃูุงุ: ุจูุงุก ุฌุณูุฑ ุจูู ุงูุฅุจุฏุงุน ูุงูุฑุจุญูุฉ</h2>
             <div class="text-xl leading-relaxed max-w-5xl mx-auto text-gray-200 space-y-6 animate-fadeInScale delay-300">
                 <p>
-                    รไว ฺศฯ วแอวÝู ฺฯไวไก ัวฦฯ รฺใวแ ัÞใํ ํฬใฺ ศํไ วแิÛÝ ศวแลศฯวฺ ๆวแÝๅใ วแฺใํÞ แฯํไวใํ฿ํวส วแำๆÞ วแัÞใํ. รั฿า ฺแ์ สอๆํแ วแÝัี วแ฿วใไษ ลแ์ สฯÝÞวส ลํัวฯวส ใแใๆำษ ฺศั วำสัวสํฬํวส สำๆํÞ ะ฿ํษ ๆใอสๆ์ ฺวแํ วแฬๆฯษ.
+                    ุฃูุง ุนุจุฏ ุงูุญุงูุธ ุนุฏูุงูุ ุฑุงุฆุฏ ุฃุนู…ุงู ุฑูู…ู ูุฌู…ุน ุจูู ุงูุดุบู ุจุงูุฅุจุฏุงุน ูุงูููู… ุงูุนู…ูู ูุฏููุงู…ูููุงุช ุงูุณูู ุงูุฑูู…ู. ุฃุฑูุฒ ุนูู ุชุญููู ุงููุฑุต ุงููุงู…ูุฉ ุฅูู ุชุฏููุงุช ุฅูุฑุงุฏุงุช ู…ูู…ูุณุฉ ุนุจุฑ ุงุณุชุฑุงุชูุฌูุงุช ุชุณููู ุฐููุฉ ูู…ุญุชูู ุนุงูู ุงูุฌูุฏุฉ.
                 </p>
                 <p>
-                    ใๅใสํ ๅํ สอÞํÞ วแไใๆ แิั฿วฦํ Ýํ วแสำๆํÞ ศวแฺใๆแษ. รÝๅใ รไ วแไฬวอ Ýํ ๅะว วแใฬวแ ํสุแศ ร฿หั ใไ ใฬัฯ ัๆวศุบ ลไๅ ํอสวฬ ลแ์ ศไวม ฬำั ใไ วแหÞษ ใฺ วแฬใๅๆัก ๆสÞฯํใ Þํใษ อÞํÞํษก ๆสอำํไ ใำสใั แแอใแวส.
+                    ู…ูู…ุชู ูู ุชุญููู ุงููู…ู ูุดุฑูุงุฆู ูู ุงูุชุณููู ุจุงูุนู…ููุฉ. ุฃููู… ุฃู ุงููุฌุงุญ ูู ูุฐุง ุงูู…ุฌุงู ูุชุทูุจ ุฃูุซุฑ ู…ู ู…ุฌุฑุฏ ุฑูุงุจุทุ ุฅูู ูุญุชุงุฌ ุฅูู ุจูุงุก ุฌุณุฑ ู…ู ุงูุซูุฉ ู…ุน ุงูุฌู…ููุฑุ ูุชูุฏูู… ููู…ุฉ ุญููููุฉุ ูุชุญุณูู ู…ุณุชู…ุฑ ููุญู…ูุงุช.
                 </p>
                 <p>
-                    ฮศัวสํ วแใสไๆฺษ Ýํ **วแสีใํใ วแฬัวÝํ฿ํ** (ฮวีษ วแีๆั วแใีÛัษ วแฬะวศษ)ก ๆ**วแสฺแํÞ วแีๆสํ วแวอสัวÝํ** (แลไิวม ใัวฬฺวส ใไสฬวส ใฤหัษ)ก ๆ**สุๆํั วแๆํศ** (แลไิวม ีÝอวส ๅศๆุ ใอำ๘ไษ)ก ศวแลึวÝษ ลแ์ Ýๅใํ วแฺใํÞ แÜ**วแใไสฬวส วแัÞใํษ ๆวแุศวฺษ ฺไฯ วแุแศ**ก ฿แๅว สีศ Ýํ ๅฯÝ ๆวอฯ: **าํวฯษ ใฺฯแวส วแสอๆํแ ๆวแรัศวอ แิั฿วฦํ**.
+                    ุฎุจุฑุงุชู ุงูู…ุชููุนุฉ ูู **ุงูุชุตู…ูู… ุงูุฌุฑุงูููู** (ุฎุงุตุฉ ุงูุตูุฑ ุงูู…ุตุบุฑุฉ ุงูุฌุฐุงุจุฉ)ุ ู**ุงูุชุนููู ุงูุตูุชู ุงูุงุญุชุฑุงูู** (ูุฅูุดุงุก ู…ุฑุงุฌุนุงุช ู…ูุชุฌุงุช ู…ุคุซุฑุฉ)ุ ู**ุชุทููุฑ ุงูููุจ** (ูุฅูุดุงุก ุตูุญุงุช ูุจูุท ู…ุญุณู‘ูุฉ)ุ ุจุงูุฅุถุงูุฉ ุฅูู ููู…ู ุงูุนู…ูู ูู€**ุงูู…ูุชุฌุงุช ุงูุฑูู…ูุฉ ูุงูุทุจุงุนุฉ ุนูุฏ ุงูุทูุจ**ุ ูููุง ุชุตุจ ูู ูุฏู ูุงุญุฏ: **ุฒูุงุฏุฉ ู…ุนุฏูุงุช ุงูุชุญููู ูุงูุฃุฑุจุงุญ ูุดุฑูุงุฆู**.
                 </p>
                 <p>
-                    รฤใไ ศÞๆษ **วแรสใสษ ๆวแะ฿วม วแวีุไวฺํ** Ýํ สอแํแ วแศํวไวส ๆสอำํไ วแอใแวส ศิ฿แ ใำสใัก ใใว ํึใไ สอÞํÞ รÞี์ ฺวฦฯ ฺแ์ วแวำสหใวั Ýํ วแสำๆํÞ ศวแฺใๆแษ. รไว ๅไว แศไวม ิัว฿ษ วำสัวสํฬํษ ุๆํแษ วแรใฯ ใศไํษ ฺแ์ วแรฯวม ๆวแไสวฦฬ วแใสศวฯแษ.
+                    ุฃุคู…ู ุจููุฉ **ุงูุฃุชู…ุชุฉ ูุงูุฐูุงุก ุงูุงุตุทูุงุนู** ูู ุชุญููู ุงูุจูุงูุงุช ูุชุญุณูู ุงูุญู…ูุงุช ุจุดูู ู…ุณุชู…ุฑุ ู…ู…ุง ูุถู…ู ุชุญููู ุฃูุตู ุนุงุฆุฏ ุนูู ุงูุงุณุชุซู…ุงุฑ ูู ุงูุชุณููู ุจุงูุนู…ููุฉ. ุฃูุง ููุง ูุจูุงุก ุดุฑุงูุฉ ุงุณุชุฑุงุชูุฌูุฉ ุทูููุฉ ุงูุฃู…ุฏ ู…ุจููุฉ ุนูู ุงูุฃุฏุงุก ูุงููุชุงุฆุฌ ุงูู…ุชุจุงุฏูุฉ.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Þำใ วแฮศัวส (Expertise) - ศฯํแ แÞำใ วแฮฯใวส -->
+    <!-- ูุณู… ุงูุฎุจุฑุงุช (Expertise) - ุจุฏูู ููุณู… ุงูุฎุฏู…ุงุช -->
     <section id="expertise" class="py-24 bg-gray-800 text-gray-100 border-b border-gray-700">
         <div class="container mx-auto px-6">
-            <h2 class="text-5xl font-bold text-emerald-400 text-center mb-16 animate-fadeInScale">ฮศัวสํ แฯฺใ ไฬวอ฿ Ýํ วแสำๆํÞ ศวแฺใๆแษ</h2>
+            <h2 class="text-5xl font-bold text-emerald-400 text-center mb-16 animate-fadeInScale">ุฎุจุฑุงุชู ูุฏุนู… ูุฌุงุญู ูู ุงูุชุณููู ุจุงูุนู…ููุฉ</h2>
             <div class="grid service-grid gap-12">
-                <!-- สีใํใ วแอใแวส วแศีัํษ วแฬะวศษ (ีๆั ใีÛัษ ๆฬัวÝํ฿) -->
+                <!-- ุชุตู…ูู… ุงูุญู…ูุงุช ุงูุจุตุฑูุฉ ุงูุฌุฐุงุจุฉ (ุตูุฑ ู…ุตุบุฑุฉ ูุฌุฑุงููู) -->
                 <div class="card-3d-effect bg-gray-700 p-8 rounded-2xl shadow-xl border border-emerald-600 animate-slideInFromLeft">
                     <h3 class="text-3xl font-semibold text-emerald-300 mb-6 flex items-center">
                         <svg class="w-10 h-10 ml-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L15 15m0 0l4.586-4.586a2 2 0 012.828 0L20 14m-2-6h.01M6 20h.01"></path></svg>
-                        สีใํใ ใัฦํวส ฬวะศษ แแอใแวส
+                        ุชุตู…ูู… ู…ุฑุฆูุงุช ุฌุงุฐุจุฉ ููุญู…ูุงุช
                     </h3>
                     <p class="text-gray-300 leading-relaxed text-lg">
-                        รีใใ ีๆั๐ว ใีÛัษ แÝํฯํๆๅวส วแใัวฬฺวสก ลฺแวไวส ศีัํษ ฬะวศษก ๆใอสๆ์ ใัฦํ ํอๆแ วแวไสศวๅ ลแ์ ไÞัวส. Ýๅใํ แแสีใํใ วแใัฦํ ํึใไ สอÞํÞ รฺแ์ ใฺฯแวส สÝวฺแ.
+                        ุฃุตู…ู… ุตูุฑูุง ู…ุตุบุฑุฉ ูููุฏูููุงุช ุงูู…ุฑุงุฌุนุงุชุ ุฅุนูุงูุงุช ุจุตุฑูุฉ ุฌุฐุงุจุฉุ ูู…ุญุชูู ู…ุฑุฆู ูุญูู ุงูุงูุชุจุงู ุฅูู ููุฑุงุช. ููู…ู ููุชุตู…ูู… ุงูู…ุฑุฆู ูุถู…ู ุชุญููู ุฃุนูู ู…ุนุฏูุงุช ุชูุงุนู.
                     </p>
                 </div>
-                <!-- ลไิวม ใอสๆ์ ีๆสํ ใฤหั (สฺแํÞ ีๆสํ) -->
+                <!-- ุฅูุดุงุก ู…ุญุชูู ุตูุชู ู…ุคุซุฑ (ุชุนููู ุตูุชู) -->
                 <div class="card-3d-effect bg-gray-700 p-8 rounded-2xl shadow-xl border border-emerald-600 animate-fadeInScale delay-100">
                     <h3 class="text-3xl font-semibold text-emerald-300 mb-6 flex items-center">
                         <svg class="w-10 h-10 ml-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
-                        ลไิวม ใอสๆ์ ีๆสํ ใÞไฺ
+                        ุฅูุดุงุก ู…ุญุชูู ุตูุชู ู…ููุน
                     </h3>
                     <p class="text-gray-300 leading-relaxed text-lg">
-                        รÞฯใ สฺแํÞวส ีๆสํษ วอสัวÝํษ แใัวฬฺวส วแใไสฬวสก วแÝํฯํๆๅวส วแสัๆํฬํษก ๆวแใอสๆ์ วแำใฺํ วแะํ ํศไํ วแหÞษ ๆํฯÝฺ วแใำสใฺํไ ไอๆ วแิัวม.
+                        ุฃูุฏู… ุชุนูููุงุช ุตูุชูุฉ ุงุญุชุฑุงููุฉ ูู…ุฑุงุฌุนุงุช ุงูู…ูุชุฌุงุชุ ุงูููุฏูููุงุช ุงูุชุฑููุฌูุฉุ ูุงูู…ุญุชูู ุงูุณู…ุนู ุงูุฐู ูุจูู ุงูุซูุฉ ููุฏูุน ุงูู…ุณุชู…ุนูู ูุญู ุงูุดุฑุงุก.
                     </p>
                 </div>
-                <!-- ศไวม ีÝอวส วแๅศๆุ ๆสอำํไ วแๆฬๆฯ วแัÞใํ -->
+                <!-- ุจูุงุก ุตูุญุงุช ุงููุจูุท ูุชุญุณูู ุงููุฌูุฏ ุงูุฑูู…ู -->
                 <div class="card-3d-effect bg-gray-700 p-8 rounded-2xl shadow-xl border border-emerald-600 animate-slideInFromRight delay-200">
                     <h3 class="text-3xl font-semibold text-emerald-300 mb-6 flex items-center">
                         <svg class="w-10 h-10 ml-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
-                        สุๆํั วแๆํศ แาํวฯษ วแสอๆํแ
+                        ุชุทููุฑ ุงูููุจ ูุฒูุงุฏุฉ ุงูุชุญููู
                     </h3>
                     <p class="text-gray-300 leading-relaxed text-lg">
-                        รศไํ ีÝอวส ๅศๆุ ใอำ๘ไษ แใฺฯแวส วแสอๆํแ ๆใๆวÞฺ ฯวฺใษ แแอใแวส วแลฺแวไํษก ใใว ํึใไ สฬัศษ ใำสฮฯใ ำแำษ สฯÝฺ วแาๆวั ไอๆ วแิัวม.
+                        ุฃุจูู ุตูุญุงุช ูุจูุท ู…ุญุณู‘ูุฉ ูู…ุนุฏูุงุช ุงูุชุญููู ูู…ูุงูุน ุฏุงุนู…ุฉ ููุญู…ูุงุช ุงูุฅุนูุงููุฉุ ู…ู…ุง ูุถู…ู ุชุฌุฑุจุฉ ู…ุณุชุฎุฏู… ุณูุณุฉ ุชุฏูุน ุงูุฒูุงุฑ ูุญู ุงูุดุฑุงุก.
                     </p>
                 </div>
-                <!-- วำสัวสํฬํวส สไๆํฺ วแฯฮแ วแัÞใํ -->
+                <!-- ุงุณุชุฑุงุชูุฌูุงุช ุชูููุน ุงูุฏุฎู ุงูุฑูู…ู -->
                 <div class="card-3d-effect bg-gray-700 p-8 rounded-2xl shadow-xl border border-emerald-600 animate-slideInFromLeft delay-300">
                     <h3 class="text-3xl font-semibold text-emerald-300 mb-6 flex items-center">
                         <svg class="w-10 h-10 ml-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
-                        วแใไสฬวส วแัÞใํษ ๆวแุศวฺษ อำศ วแุแศ
+                        ุงูู…ูุชุฌุงุช ุงูุฑูู…ูุฉ ูุงูุทุจุงุนุฉ ุญุณุจ ุงูุทูุจ
                     </h3>
                     <p class="text-gray-300 leading-relaxed text-lg">
-                        รÝๅใ ฿ํÝํษ สุๆํั ๆสÞฯํใ วแใไสฬวส วแัÞใํษ ๆวแสีใํใวส แแุศวฺษ ฺไฯ วแุแศก ใใว ํใหแ ใำวัวส ลึวÝํษ แฯÝฺ อั฿ษ วแใัๆั ๆสอÞํÞ วแรัศวอ ใไ วแิัว฿วส.
+                        ุฃููู… ููููุฉ ุชุทููุฑ ูุชูุฏูู… ุงูู…ูุชุฌุงุช ุงูุฑูู…ูุฉ ูุงูุชุตู…ูู…ุงุช ููุทุจุงุนุฉ ุนูุฏ ุงูุทูุจุ ู…ู…ุง ูู…ุซู ู…ุณุงุฑุงุช ุฅุถุงููุฉ ูุฏูุน ุญุฑูุฉ ุงูู…ุฑูุฑ ูุชุญููู ุงูุฃุฑุจุงุญ ู…ู ุงูุดุฑุงูุงุช.
                     </p>
                 </div>
-                <!-- สอแํแ วแรฯวม ๆสอำํไ วแอใแวส (ศวแะ฿วม วแวีุไวฺํ) -->
+                <!-- ุชุญููู ุงูุฃุฏุงุก ูุชุญุณูู ุงูุญู…ูุงุช (ุจุงูุฐูุงุก ุงูุงุตุทูุงุนู) -->
                 <div class="card-3d-effect bg-gray-700 p-8 rounded-2xl shadow-xl border border-emerald-600 animate-fadeInScale delay-400">
                     <h3 class="text-3xl font-semibold text-emerald-300 mb-6 flex items-center">
                         <svg class="w-10 h-10 ml-4 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v14m-9 0h18a2 2 0 002-2V5a2 2 0 00-2-2H3a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                        วแรสใสษ ๆสอำํไ วแรฯวม ศวแะ฿วม วแวีุไวฺํ
+                        ุงูุฃุชู…ุชุฉ ูุชุญุณูู ุงูุฃุฏุงุก ุจุงูุฐูุงุก ุงูุงุตุทูุงุนู
                     </h3>
                     <p class="text-gray-300 leading-relaxed text-lg">
-                        ุใๆอํ Ýํ วแรสใสษ ๆวแะ฿วม วแวีุไวฺํ ํใ฿ไไํ ใไ สอแํแ ศํวไวส วแอใแวสก สอฯํฯ วแรไใวุก ๆสอำํไ วแวำสัวสํฬํวส ศวำสใัวั แสอÞํÞ รÞี์ Þฯั ใไ วแฺวฦฯ ฺแ์ วแวำสหใวั.
+                        ุทู…ูุญู ูู ุงูุฃุชู…ุชุฉ ูุงูุฐูุงุก ุงูุงุตุทูุงุนู ูู…ูููู ู…ู ุชุญููู ุจูุงูุงุช ุงูุญู…ูุงุชุ ุชุญุฏูุฏ ุงูุฃูู…ุงุทุ ูุชุญุณูู ุงูุงุณุชุฑุงุชูุฌูุงุช ุจุงุณุชู…ุฑุงุฑ ูุชุญููู ุฃูุตู ูุฏุฑ ู…ู ุงูุนุงุฆุฏ ุนูู ุงูุงุณุชุซู…ุงุฑ.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Þำใ ัฤํสํ ๆฮุุํ (My Vision & Plans) - สใ สฺฯํแๅ แํไวำศ วแสำๆํÞ ศวแฺใๆแษ -->
+    <!-- ูุณู… ุฑุคูุชู ูุฎุทุทู (My Vision & Plans) - ุชู… ุชุนุฏููู ูููุงุณุจ ุงูุชุณููู ุจุงูุนู…ููุฉ -->
     <section id="vision" class="py-24 bg-gray-900 text-gray-100 border-b border-gray-700">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-5xl font-bold text-emerald-400 mb-12 animate-fadeInScale">ัฤํสํ แแิัว฿ษ: ศไวม ไฬวอ ใิสั฿ Ýํ วแสำๆํÞ ศวแฺใๆแษ</h2>
+            <h2 class="text-5xl font-bold text-emerald-400 mb-12 animate-fadeInScale">ุฑุคูุชู ููุดุฑุงูุฉ: ุจูุงุก ูุฌุงุญ ู…ุดุชุฑู ูู ุงูุชุณููู ุจุงูุนู…ููุฉ</h2>
             <div class="max-w-5xl mx-auto text-xl leading-relaxed text-gray-200 space-y-8 animate-fadeInScale delay-300">
                 <p>
-                    รั์ วแิัว฿ษ Ýํ วแสำๆํÞ ศวแฺใๆแษ ฿ฺแวÞษ วำสัวสํฬํษ แแไใๆ วแใสศวฯแ. ัฤํสํ ๅํ แํำส ใฬัฯ วแสัๆํฬ แใไสฬวส฿ก ศแ รไ รีศอ วใสฯวฯ๐ว แÝัํÞ วแสำๆํÞ วแฮวี ศ฿ก รฺใแ ฺแ์ ศไวม Þไๆวส ฬะศ ะวส Þํใษ ฺวแํษ ๆสอๆํแ Ýฺวแ แแใศํฺวส.
+                    ุฃุฑู ุงูุดุฑุงูุฉ ูู ุงูุชุณููู ุจุงูุนู…ููุฉ ูุนูุงูุฉ ุงุณุชุฑุงุชูุฌูุฉ ูููู…ู ุงูู…ุชุจุงุฏู. ุฑุคูุชู ูู ููุณุช ู…ุฌุฑุฏ ุงูุชุฑููุฌ ูู…ูุชุฌุงุชูุ ุจู ุฃู ุฃุตุจุญ ุงู…ุชุฏุงุฏูุง ููุฑูู ุงูุชุณููู ุงูุฎุงุต ุจูุ ุฃุนู…ู ุนูู ุจูุงุก ูููุงุช ุฌุฐุจ ุฐุงุช ููู…ุฉ ุนุงููุฉ ูุชุญููู ูุนุงู ููู…ุจูุนุงุช.
                 </p>
                 <p>
-                    <strong class="text-emerald-500">฿ํÝ ำรำวๅใ Ýํ ไใๆ ศัไวใฬ฿ ศวแฺใๆแษ:</strong>
+                    <strong class="text-emerald-500">ููู ุณุฃุณุงูู… ูู ูู…ู ุจุฑูุงู…ุฌู ุจุงูุนู…ููุฉ:</strong>
                     <ul class="list-disc list-inside mt-4 space-y-4 text-right">
                         <li>
-                            <strong class="text-emerald-400">ลไิวม ใอสๆ์ ฺวแํ วแสอๆํแ:</strong> ใไ ฮแวแ สีใํใวส ศีัํษ ฬะวศษ (ีๆั ใีÛัษก ลฺแวไวส) ๆสฺแํÞวส ีๆสํษ ใฤหัษก ำรไสฬ ใอสๆ์ ํÞไฺ วแฬใๅๆั ๆํอÝาๅใ ฺแ์ วแิัวม.
+                            <strong class="text-emerald-400">ุฅูุดุงุก ู…ุญุชูู ุนุงูู ุงูุชุญููู:</strong> ู…ู ุฎูุงู ุชุตู…ูู…ุงุช ุจุตุฑูุฉ ุฌุฐุงุจุฉ (ุตูุฑ ู…ุตุบุฑุฉุ ุฅุนูุงูุงุช) ูุชุนูููุงุช ุตูุชูุฉ ู…ุคุซุฑุฉุ ุณุฃูุชุฌ ู…ุญุชูู ูููุน ุงูุฌู…ููุฑ ููุญูุฒูู… ุนูู ุงูุดุฑุงุก.
                         </li>
                         <li>
-                            <strong class="text-emerald-400">สอำํไ ใำวัวส วแสอๆํแ:</strong> วำสฮฯวใ ฮศัสํ Ýํ สุๆํั วแๆํศ แศไวม ีÝอวส ๅศๆุ (landing pages) ใีใใษ ฮีํี๐ว แศัไวใฬ฿ก ใฺ วแสั฿ํา ฺแ์ สฬัศษ วแใำสฮฯใ แาํวฯษ ใฺฯแวส วแสอๆํแ.
+                            <strong class="text-emerald-400">ุชุญุณูู ู…ุณุงุฑุงุช ุงูุชุญููู:</strong> ุงุณุชุฎุฏุงู… ุฎุจุฑุชู ูู ุชุทููุฑ ุงูููุจ ูุจูุงุก ุตูุญุงุช ูุจูุท (landing pages) ู…ุตู…ู…ุฉ ุฎุตูุตูุง ูุจุฑูุงู…ุฌูุ ู…ุน ุงูุชุฑููุฒ ุนูู ุชุฌุฑุจุฉ ุงูู…ุณุชุฎุฏู… ูุฒูุงุฏุฉ ู…ุนุฏูุงุช ุงูุชุญููู.
                         </li>
                         <li>
-                            <strong class="text-emerald-400">วำสัวสํฬํวส สำๆํÞํษ ใสฺฯฯษ:</strong> สุศํÞ Ýๅใํ แแสำๆํÞ วแัÞใํ ๆวแสำๆํÞ ศวแฺใๆแษ แฬะศ อั฿ษ ใัๆั ใำสๅฯÝษ ฺวแํษ วแฬๆฯษก ฺศั Þไๆวส ใสไๆฺษ.
+                            <strong class="text-emerald-400">ุงุณุชุฑุงุชูุฌูุงุช ุชุณููููุฉ ู…ุชุนุฏุฏุฉ:</strong> ุชุทุจูู ููู…ู ููุชุณููู ุงูุฑูู…ู ูุงูุชุณููู ุจุงูุนู…ููุฉ ูุฌุฐุจ ุญุฑูุฉ ู…ุฑูุฑ ู…ุณุชูุฏูุฉ ุนุงููุฉ ุงูุฌูุฏุฉุ ุนุจุฑ ูููุงุช ู…ุชููุนุฉ.
                         </li>
                         <li>
-                            <strong class="text-emerald-400">วแวำสÝวฯษ ใไ วแศํวไวส ๆวแะ฿วม วแวีุไวฺํ:</strong> สอแํแ รฯวม วแอใแวส ศิ฿แ ใำสใัก ๆสอฯํฯ Ýัี วแสอำํไก ๆวำสฮฯวใ รฯๆวส วแรสใสษ ๆวแะ฿วม วแวีุไวฺํ แสอำํไ วำสัวสํฬํวส วแสัๆํฬ ๆสอÞํÞ รÞี์ ฺวฦฯ ฺแ์ วแวำสหใวั.
+                            <strong class="text-emerald-400">ุงูุงุณุชูุงุฏุฉ ู…ู ุงูุจูุงูุงุช ูุงูุฐูุงุก ุงูุงุตุทูุงุนู:</strong> ุชุญููู ุฃุฏุงุก ุงูุญู…ูุงุช ุจุดูู ู…ุณุชู…ุฑุ ูุชุญุฏูุฏ ูุฑุต ุงูุชุญุณููุ ูุงุณุชุฎุฏุงู… ุฃุฏูุงุช ุงูุฃุชู…ุชุฉ ูุงูุฐูุงุก ุงูุงุตุทูุงุนู ูุชุญุณูู ุงุณุชุฑุงุชูุฌูุงุช ุงูุชุฑููุฌ ูุชุญููู ุฃูุตู ุนุงุฆุฏ ุนูู ุงูุงุณุชุซู…ุงุฑ.
                         </li>
                         <li>
-                            <strong class="text-emerald-400">วแวแสาวใ ศวแิÝวÝํษ ๆวแไสวฦฬ:</strong> รฤใไ ศวแฺใแ วแÞวฦใ ฺแ์ วแรฯวม ๆวแไสวฦฬ วแใแใๆำษ. ำรฺใแ ศิÝวÝํษ ฿วใแษ แสาๆํฯ฿ ศวแสÞวัํั วแฯๆัํษ อๆแ รฯวม อใแวสํ.
+                            <strong class="text-emerald-400">ุงูุงูุชุฒุงู… ุจุงูุดูุงููุฉ ูุงููุชุงุฆุฌ:</strong> ุฃุคู…ู ุจุงูุนู…ู ุงููุงุฆู… ุนูู ุงูุฃุฏุงุก ูุงููุชุงุฆุฌ ุงูู…ูู…ูุณุฉ. ุณุฃุนู…ู ุจุดูุงููุฉ ูุงู…ูุฉ ูุชุฒููุฏู ุจุงูุชูุงุฑูุฑ ุงูุฏูุฑูุฉ ุญูู ุฃุฏุงุก ุญู…ูุงุชู.
                         </li>
                     </ul>
                 </p>
                 <p>
-                    ๅฯÝํ ๅๆ ศไวม ิัว฿วส ุๆํแษ วแรใฯ สำวๅใ Ýํ สอÞํÞ รๅฯวÝ฿ วแสำๆํÞํษก ๆสๆำํฺ Þวฺฯษ ฺใแวฦ฿ก ๆาํวฯษ ลํัวฯวส฿ ศÝฺวแํษ ๆวอสัวÝํษ.
+                    ูุฏูู ูู ุจูุงุก ุดุฑุงูุงุช ุทูููุฉ ุงูุฃู…ุฏ ุชุณุงูู… ูู ุชุญููู ุฃูุฏุงูู ุงูุชุณููููุฉุ ูุชูุณูุน ูุงุนุฏุฉ ุนู…ูุงุฆูุ ูุฒูุงุฏุฉ ุฅูุฑุงุฏุงุชู ุจูุนุงููุฉ ูุงุญุชุฑุงููุฉ.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Þำใ สๆวีแ ใฺํ (Contact) -->
+    <!-- ูุณู… ุชูุงุตู ู…ุนู (Contact) -->
     <section id="contact" class="py-24 bg-gray-800 text-gray-100">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-5xl font-bold text-emerald-400 mb-12 animate-fadeInScale">สๆวีแ ใฺํ: แไศฯร ิัว฿สไว แแไฬวอ</h2>
+            <h2 class="text-5xl font-bold text-emerald-400 mb-12 animate-fadeInScale">ุชูุงุตู ู…ุนู: ููุจุฏุฃ ุดุฑุงูุชูุง ูููุฌุงุญ</h2>
             <p class="text-xl leading-relaxed max-w-3xl mx-auto mb-12 text-gray-200">
-                ๅแ สศอห ฺไ ิัํ฿ ใแสาใ แสฺาํา ศัไวใฬ฿ Ýํ วแสำๆํÞ ศวแฺใๆแษฟ ํำฺฯไํ วแสๆวีแ ใฺ฿!
+                ูู ุชุจุญุซ ุนู ุดุฑูู ู…ูุชุฒู… ูุชุนุฒูุฒ ุจุฑูุงู…ุฌู ูู ุงูุชุณููู ุจุงูุนู…ููุฉุ ูุณุนุฏูู ุงูุชูุงุตู ู…ุนู!
             </p>
             <div class="flex flex-col items-center space-y-8">
                 <a href="mailto:your.email@example.com" class="hero-button py-4 px-10 rounded-full shadow-2xl inline-block text-lg">
-                    สๆวีแ ฺศั วแศัํฯ วแลแ฿สัๆไํ: your.email@example.com
+                    ุชูุงุตู ุนุจุฑ ุงูุจุฑูุฏ ุงูุฅููุชุฑููู: your.email@example.com
                 </a>
                 <p class="text-2xl text-emerald-300 font-bold">
-                    รๆ สฬฯไํ ฺแ์ ใไีวส วแฺใแ วแอั (แลูๅวั ไิวุํ วแฺวใ):
+                    ุฃู ุชุฌุฏูู ุนูู ู…ูุตุงุช ุงูุนู…ู ุงูุญุฑ (ูุฅุธูุงุฑ ูุดุงุทู ุงูุนุงู…):
                 </p>
-                <!-- ัๆวศุ ใไีวส วแฺใแ วแอั รๆ วแสๆวีแ วแวฬสใวฺํ -->
+                <!-- ุฑูุงุจุท ู…ูุตุงุช ุงูุนู…ู ุงูุญุฑ ุฃู ุงูุชูุงุตู ุงูุงุฌุชู…ุงุนู -->
                 <div class="flex space-x-8 space-x-reverse">
-                    <!-- ัวศุ ÝวํÝั -->
+                    <!-- ุฑุงุจุท ูุงููุฑ -->
                     <a href="https://www.fiverr.com/[YourFiverrUsername]" target="_blank" class="text-emerald-400 hover:text-emerald-200 transition-colors duration-200 text-3xl font-semibold transform hover:scale-110">Fiverr</a>
-                    <!-- ัวศุ วศ ๆๆั฿ -->
+                    <!-- ุฑุงุจุท ุงุจ ููุฑู -->
                     <a href="https://www.upwork.com/freelancers/~[YourUpworkProfile]" target="_blank" class="text-emerald-400 hover:text-emerald-200 transition-colors duration-200 text-3xl font-semibold transform hover:scale-110">Upwork</a>
-                    <!-- ัวศุ แํไ฿ฯ ลไ -->
+                    <!-- ุฑุงุจุท ููููุฏ ุฅู -->
                     <a href="https://www.linkedin.com/in/[YourLinkedInProfile]" target="_blank" class="text-emerald-400 hover:text-emerald-200 transition-colors duration-200 text-3xl font-semibold transform hover:scale-110">LinkedIn</a>
-                    <!-- ํใ฿ไ฿ ลึวÝษ วแใาํฯ ใไ วแัๆวศุ ๅไว -->
+                    <!-- ูู…ููู ุฅุถุงูุฉ ุงูู…ุฒูุฏ ู…ู ุงูุฑูุงุจุท ููุง -->
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- สะํํแ วแีÝอษ (Footer) -->
+    <!-- ุชุฐููู ุงูุตูุญุฉ (Footer) -->
     <footer class="bg-gray-950 text-gray-400 py-12 mt-20 rounded-t-3xl shadow-inner">
         <div class="container mx-auto px-6 text-center">
-            <p class="text-lg mb-3">&copy; 2025 ฺศฯ วแอวÝู ฺฯไวไ. ฬใํฺ วแอÞๆÞ ใอÝๆูษ.</p>
-            <p class="text-sm">ใีใใก ใุๆัก ๆใฺแÞ ีๆสํ. ใแสาใ ศวแวศส฿วั ๆวแฬๆฯษ.</p>
+            <p class="text-lg mb-3">&copy; 2025 ุนุจุฏ ุงูุญุงูุธ ุนุฏูุงู. ุฌู…ูุน ุงูุญููู ู…ุญููุธุฉ.</p>
+            <p class="text-sm">ู…ุตู…ู…ุ ู…ุทูุฑุ ูู…ุนูู ุตูุชู. ู…ูุชุฒู… ุจุงูุงุจุชูุงุฑ ูุงูุฌูุฏุฉ.</p>
         </div>
     </footer>
 
